@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Restaurant</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/bootstrap-icons-1.11.2/font/bootstrap-icons.css">
+        <!-- CDN via jsDelivr -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <!-- custumize css file -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <!-- Google Font -->
+        <!-- Render All Elements Normally -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="header-container w-100">
+                <nav class="container-fluid container-md navbar nav-underline navbar-expand-lg pe-4 pe-md-0">
+                    <div class="container-fluid d-flex align-items-center justify-content-between w-100">
+                        <!-- LOGO -->
+                        <a class="logo navbar-brand d-flex pb-3" href="#">
+                            <i class="bi bi-cup-hot-fill fs-3" style="color:var(--primary-color);"></i>
+                        </a>
+                        <!-- Collapse -->
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "></span>
+                        </button>
+                        <!-- Navbar Link -->
+                        <div class="header-navbar collapse navbar-collapse w-75" id="navbarSupportedContent">
+                            <div class="d-flex justify-content-center w-100">
+                                <ul class="navbar-nav w-25 text-center">
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link" href="#home" aria-current="page">Home</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link" href="#menu">Menu</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link" href="#gallery">Gallery</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link" href="#contact">contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-flex align-content-center justify-content-center">
+                                <button type="button"
+                                    class="book-btn btn rounded-pill text-white fw-bold text-uppercase mt-3 mt-lg-1">
+                                    <a href="#book"> book a table</a>
+                                </button>
+                            </div>
+                        </div>
+                </nav>
+            </div>
+        </header>
+        <!-- carousel -->
+        <div class="carousel-container">
+            <div id="myCarousel" class="carousel slide h-100 w-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <img src="assets/images/AdobeStock_629063359_Preview.jpeg" class="img-fluid d-block h-100 w-100"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item  h-100">
+                        <img src="assets/images/AdobeStock_636405504_Preview.jpeg" class="img-fluid d-block h-100 w-100"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item  h-100">
+                        <img src="assets/images/AdobeStock_661975760_Preview.jpeg" class="img-fluid d-block h-100 w-100"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+            <!-- ********** Header + NavBar ********** -->
+        </div>
+        <main>
+            <!-- ********** [ Home Section ] ********** -->
+            <section id="home" class="home w-100">
+                <div class="container">
+                    <div class="d-flex justify-content-center align-items-center flex-column w-100 ">
+                        <h1 class="home-title text-center text-lg-start text-white w-50 mb-4 mb-md-5 mb-lg-2">Welcome
+                            to<span class="restaurant-name mx-3">Restaurant Name</span>
+                        </h1>
+                        <h2 class="restaurant-desc text-white-50 text-center text-lg-start w-50 mb-4 mb-md-5 mb-lg-2">
+                            "Indulge in Culinary Delights: Where Every Bite is a Passport to Flavors of Amore!" </h2>
+                        <div class="action-button d-flex flex-column flex-md-row mt-2 mt-md-5 mt-lg-2">
+                            <button class="book-btn btn rounded-pill text-white text-uppercase me-md-3 fw-bold"><a
+                                    href="#menu"> our menu </a></button>
+                            <button class="book-btn btn rounded-pill text-white text-uppercase fw-bold  mt-3 mt-md-0 ">
+                                <a href="#book"> Book a table </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ********** [ About Section ] ********** -->
+            <section id="about" class="container-fluid container-lg pb-5 ">
+                <p class="text-uppercase text-center text-black-50 fs-5 fw-bold">about</p>
+                <h2 class="section-title text-capitalize text-center fw-bold mb-5">about us</h2>
+                <!-- Grid -->
+                <div class="row px-5">
+                    <div class="col-12 col-md-6 col-lg-5 p-0">
+                        <div class=" d-flex justify-content-center align-items-center about-img position-relative">
+                            <img class="img-fluid" src="assets/images/AdobeStock_661975760_Preview.jpeg" alt="">
+                            <h5 class="about-text text-white text-uppercase position-absolute z-1  p-3 p-md-2 p-lg-3">
+                                about restaurant </h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-7 p-0">
+                        <div class="info-about d-flex justify-content-center align-items-center text-white fs-5 ">add
+                            brief about us information</div>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <!-- Grid -->
+                <div class="row px-5">
+                    <div class="col-12 col-md-6 col-lg-7 p-0">
+                        <div class="info-about d-flex justify-content-center align-items-center text-white fs-5 ">add
+                            brief about us information</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 p-0">
+                        <div class=" d-flex justify-content-center align-items-center about-img position-relative">
+                            <img class="img-fluid" src="assets/images/AdobeStock_644280972_Preview.jpeg" alt="">
+                            <h5 class="about-text text-white text-uppercase position-absolute z-1 p-3 p-md-2 p-lg-3">
+                                about restaurant </h5>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <!-- Grid -->
+                <div class="row px-5">
+                    <div class="col-12 col-md-4 p-0">
+                        <div class=" d-flex justify-content-center align-items-center about-img position-relative">
+                            <img class="img-fluid" src="assets/images/AdobeStock_636405504_Preview.jpeg" alt="">
+                            <h5 class="about-text text-white text-uppercase position-absolute z-1 p-3 p-md-2 p-lg-3">
+                                about restaurant </h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 p-0">
+                        <div class="info-about d-flex justify-content-center align-items-center text-white"> add brief
+                            about us information</div>
+                    </div>
+                    <div class="col-12 col-md-4 p-0">
+                        <div class=" d-flex justify-content-center align-items-center about-img position-relative">
+                            <img class="img-fluid" src="assets/images/AdobeStock_629063359_Preview.jpeg" alt="">
+                            <h5 class="about-text text-white text-uppercase position-absolute z-1 p-3 p-md-2 p-lg-3">
+                                about restaurant </h5>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-5">
+            </section>
+            <!-- ********** [ Menu Section ] ********** -->
+            <section id="menu" class="container-fluid container-lg d-flex align-items-center flex-column py-5 ">
+                <p class="text-uppercase text-center text-black-50 fs-5 fw-bold">menu</p>
+                <h2 class="section-title text-capitalize text-center fw-bold mb-5 ">check our tasty menu</h2>
+                <ul class="nav nav-pills d-flex flex-wrap mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-show-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-show" type="button" role="tab" aria-controls="pills-show"
+                            aria-selected="true">Show All</button>
+                    </li>
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-beverages-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-beverages" type="button" role="tab" aria-controls="pills-beverages"
+                            aria-selected="false">Beverages</button>
+                    </li>
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-lunch-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch"
+                            aria-selected="false">Lunch</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link  rounded-pill" id="pills-dinner-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner"
+                            aria-selected="false">Dinner</button>
+                    </li>
+                </ul>
+                <hr class="w-75">
+                <div class="tab-content w-75" id="pills-tabContent">
+                    <!-- show all content -->
+                    <div class="tab-pane fade show active " id="pills-show" role="tabpanel"
+                        aria-labelledby="pills-show-tab" tabindex="0">
+                        <div class="col">
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- beverages content -->
+                    <div class="tab-pane fade " id="pills-beverages" role="tabpanel"
+                        aria-labelledby="pills-beverages-tab" tabindex="0">
+                        <div class="col">
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- lunch content -->
+                    <div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab"
+                        tabindex="0">
+                        <div class="col">
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dinner content -->
+                    <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
+                        tabindex="0">
+                        <div class="col">
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="desc-main d-flex justify-content-between flex-wrap">
+                                    <h5 class="fw-bold">Grilled Filet Mignon</h5><strong>$25.84</strong>
+                                </div>
+                                <div class="text-black-50"> Tender filet mignon steak cooked to perfection, served with
+                                    a side of garlic mashed potatoes and saut asparagus. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ********** [ book a table Section ] ********** -->
+            <section id="book" class="container p-lg-5">
+                <p class="text-uppercase text-center text-black-50 fs-5 fw-bold">reservation</p>
+                <h2 class="section-title text-capitalize text-center fw-bold mb-5 ">book a table</h2>
+                <form action="" method="post" class="row g-3 needs-validation" validate>
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <input class="form-control border-black" type="text" id="name" placeholder="Name" required>
+                        <div class="valid-feedback"> Please Enter You Name </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <input class="form-control border-black" type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <input class="form-control border-black" type="text" id="phone" placeholder="Phome" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <input class="form-control border-black" type="date" id="date" placeholder="mm/dd/yy" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-2 text-start">
+                        <input class="form-control border-black" type="time" id="time" placeholder="--:-- --" required>
+                        <small class="form-text">Please enter the time of your visit.</small>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <input class="form-control border-black" type="number" id="num" placeholder="No. of People"
+                            required>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control border-black" name="message" id="message" cols="30" rows="10"
+                            placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="book-btn btn rounded-pill">Book a Table</button>
+                    </div>
+                </form>
+            </section>
+            <!-- ********** [ gallery Section ] ********** -->
+            <section id="gallery" class="container py-5 p-lg-5">
+                <p class="text-uppercase text-center text-black-50 fs-5 fw-bold">Gallery</p>
+                <h2 class="section-title text-capitalize text-center fw-bold mb-5 ">Some photos from Our Restaurant</h2>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link active rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food"
+                            aria-selected="true">Food</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-ambience-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-ambience" type="button" role="tab" aria-controls="pills-ambience"
+                            aria-selected="false">Ambience</button>
+                    </li>
+                </ul>
+                <hr class="">
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Food Content -->
+                    <div class="tab-pane fade show active" id="pills-food" role="tabpanel"
+                        aria-labelledby="pills-food-tab" tabindex="0">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_661975760_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_629063359_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_661975760_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="border: 1px solid; ">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_644280972_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_629063359_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_661975760_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ambience Content -->
+                    <div class="tab-pane fade" id="pills-ambience" role="tabpanel" aria-labelledby="pills-ambience-tab"
+                        tabindex="0">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_644280972_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_629063359_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_661975760_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="border: 1px solid; ">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_644280972_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_661975760_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="image-container">
+                                    <img class="img-fluid" src="assets/images/AdobeStock_629063359_Preview.jpeg"
+                                        alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ********** [ contact Section ] ********** -->
+            <section id="contact" class="container py-5 p-lg-5">
+                <p class="text-uppercase text-center text-black-50 fs-5 fw-bold">Contact</p>
+                <h2 class="section-title text-capitalize text-center fw-bold mb-5 ">Contact Us</h2>
+                <div class="map">
+                    <!-- Insert the URL of the restaurant's location. -->
+                    <iframe style="border:1px solid var(--primary-color); width: 100%; height: 350px;"
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6641.6162694677!2d-117.99591!3d33.662133!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1692763637266!5m2!1sen!2sus"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <!-- Grid -->
+                <div class="row mt-5">
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <!-- location -->
+                        <div class="row">
+                            <div class="location d-flex align-items-start">
+                                <div class="icon mt-1 me-2"><i class="bi bi-geo-alt px-2 py-1 fs-3"
+                                        style="color: #ffffff;background-color: var(--secondary-color); border-radius: 0.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h5 class="title fw-bold">Location:</h5>
+                                    <p class="text-black-50">Insert the location of the restaurant's location that you
+                                        prefer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- hours -->
+                        <div class="row">
+                            <div class="hours d-flex align-items-start">
+                                <div class="icon mt-1 me-2"><i class="bi bi-stopwatch-fill px-2 py-1 fs-3"
+                                        style="color: #ffffff;background-color: var(--secondary-color); border-radius: 0.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h5 class="title fw-bold">Open Hours:</h5>
+                                    <p class="text-black-50">Monday - Sunday: <br> 9:00 AM - 11:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="row">
+                            <div class="email d-flex align-items-start">
+                                <div class="icon mt-1 me-2"><i class="bi bi-envelope-at-fill px-2 py-1 fs-3"
+                                        style="color: #ffffff;background-color: var(--secondary-color); border-radius: 0.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h5 class="title fw-bold"> Email:</h5>
+                                    <p class="text-black-50">reem.manswor@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="row">
+                            <div class="phone d-flex align-items-start">
+                                <div class="icon mt-1 me-2"><i class="bi bi-telephone-fill px-2 py-1 fs-3"
+                                        style="color: #ffffff;background-color: var(--secondary-color); border-radius: 0.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h5 class="title fw-bold">Phone:</h5>
+                                    <p class="text-black-50">+963954808799</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-8">
+                        <form action="" method="get">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="text" id="name" class="form-control border-black"
+                                        placeholder="Reem Mansour">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="email" id="email" class="form-control border-black"
+                                        placeholder="reem.manswor@gmail.com">
+                                </div>
+                                <div class="col-12  mb-3">
+                                    <input type="text" id="subject" class="form-control border-black"
+                                        placeholder="Subject">
+                                </div>
+                                <div class="col-12  mb-3">
+                                    <textarea name="message" id="message" class="form-control border-black" cols="30"
+                                        rows="10" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12 text-center mb-3">
+                                    <button type="submit" class="btn book-btn rounded-pill"> Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer id="footer" class="bg-dark">
+                <div class="container">
+                    <div class=" row g-4">
+                        <div class="col-12 col-md-6 text-center">
+                            <h4 style="color: var(--primary-color);">Sizzle</h4>
+                            <div class="icons d-flex justify-content-center align-items-center flex-wrap">
+                                <div class="icon m-2"><i class="bi bi-facebook px-2 py-1 fs-3"
+                                        style="color: #ffffff;background-color: var(--secondary-color); border-radius: 0.5rem;"></i>
+                                </div>
+                                <div class="icon m-2"><i class="bi bi-messenger px-2 py-1 fs-3"
+                                        style="color: #ffffff;background-color: var(--secondary-color); border-radius: 0.5rem;"></i>
+                                </div>
+                                <div class="icon m-2"><i class="bi bi-linkedin px-2 py-1 fs-3"
+                                        style="color: #ffffff;background-color: var(--secondary-color); border-radius: 0.5rem;"></i>
+                                </div>
+                                <div class="icon m-2"><i class="bi bi-github px-2 py-1 fs-3"
+                                        style="color: #ffffff;background-color: var(--secondary-color); border-radius: 0.5rem;"></i>
+                                </div>
+                                <div class="icon m-2"><i class="bi bi-twitter px-2 py-1 fs-3"
+                                        style="color: #ffffff;background-color: var(--secondary-color); border-radius: 0.5rem;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 text-center">
+                            <h4 style="color: var(--primary-color);">Useful Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>
