@@ -121,10 +121,10 @@ button.book-btn:hover,
 /* ********** [ Responsive of Header ] ********** */
 @media (max-width: 575.99px) {
   .home-title {
-    font-size: var(--small-font-size) !important;
+    font-size: var(--normal-font-size) !important;
   }
   .restaurant-desc {
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
   }
   button.book-btn {
     width: 10rem;
