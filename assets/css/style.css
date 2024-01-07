@@ -129,6 +129,9 @@ button.book-btn:hover,
   button.book-btn {
     width: 10rem;
   }
+  .carousel {
+    height: 80vh;
+  }
 }
 @media (min-width: 576px) {
   .home-title {
@@ -139,6 +142,9 @@ button.book-btn:hover,
   }
   button.book-btn {
     width: 11rem;
+  }
+  .carousel {
+    height: 80vh;
   }
 }
 @media (min-width: 992px) {
@@ -153,6 +159,9 @@ button.book-btn:hover,
   }
   .background-image-div {
     top: -7rem;
+  }
+  .carousel {
+    height: 100vh;
   }
 }
 /* ********** [ End Home Section] ********** */
