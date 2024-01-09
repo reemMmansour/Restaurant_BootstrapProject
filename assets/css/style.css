@@ -80,6 +80,7 @@ a.nav-link:hover {
 }
 button.book-btn {
   border: 2px solid #ffffff;
+  transition: all 0.4s ease-out;
 }
 #contact button.book-btn,
 #book button.book-btn {
@@ -91,7 +92,14 @@ button.book-btn a {
 }
 button.book-btn:hover {
   background-color: var(--primary-color);
+  box-shadow: 0 0 3px 1px #ffe0b6;
+  transform: scale(1.1);
 }
+#book button.book-btn:hover,
+#contact button.book-btn:hover {
+  box-shadow: 0 0 3px 1px #552f00;
+}
+
 button.book-btn:hover,
 .book-btn:hover a {
   color: #ffffff;
@@ -178,7 +186,12 @@ button.book-btn:hover,
   height: 100%;
 }
 .about-text {
+  /* transition: all 0.4s ease-out;   */
   background-color: var(--primary-text-color);
+}
+.about-text:hover {
+  /* box-shadow: 0 0 3px 1px #ffe0b6; */
+  /* transform: scale(1.1); */
 }
 .info-about {
   background-color: var(--secondary-color);
